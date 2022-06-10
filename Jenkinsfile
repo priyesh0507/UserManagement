@@ -42,7 +42,7 @@ pipeline {
         stage("Deployment") {
             steps {
                 script {
-                    sh("kubectl apply -f k8s/development/service.yaml")
+                    sh("kubectl apply -f deployment.yaml")
                 }
             }
         }
