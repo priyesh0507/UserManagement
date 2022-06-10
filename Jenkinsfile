@@ -25,7 +25,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("otaideators/usermgmnt:${env.BUILD_ID}")
+                    myapp = docker.build("ashwani13/usermgmnt:${env.BUILD_ID}")
                 }
             }
         }
