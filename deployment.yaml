@@ -28,7 +28,7 @@ spec:
         spec:
             containers:
                 - name: user-mgmnt
-                  image: user-mgmnt # Image that will be used inside the container in the cluster
+                  image: registry.hub.docker.com/ashwani13/usermgmnt # Image that will be used inside the container in the cluster
                   imagePullPolicy: IfNotPresent
                   ports:
                       - containerPort: 8087 # The port that the container is running on in the cluster
