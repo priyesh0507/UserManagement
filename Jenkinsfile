@@ -42,7 +42,7 @@ pipeline {
         stage("Deployment") {
             steps {
                 script {
-                    sh("kubectl apply -f deployment.yaml")
+                    sh("sudo kubectl apply -f deployment.yaml")
                 }
             }
         }
