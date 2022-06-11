@@ -1,0 +1,36 @@
+{
+  "path": [
+    {
+      "secret/*": [
+        {
+          "capabilities": [
+            "deny"
+          ]
+        }
+      ]
+    },
+    {
+      "secret/data/thales": [
+        {
+          "capabilities": [
+            "create",
+            "read",
+            "update",
+            "delete",
+            "list",
+            "sudo"
+          ]
+        }
+      ]
+    },
+    {
+      "sys/policies/acl/*": [
+        {
+          "capabilities": [
+            "deny"
+          ]
+        }
+      ]
+    }
+  ]
+}
